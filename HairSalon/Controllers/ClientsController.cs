@@ -40,7 +40,7 @@ namespace HairSalon.Controllers
         public ActionResult Details(int id)
         {
             Client thisClient =
-                _db.Clinets.FirstOrDefault(client => client.ClientId == id);
+                _db.Clients.FirstOrDefault(client => client.ClientId == id);
             return View(thisClient);
         }
 
@@ -48,7 +48,7 @@ namespace HairSalon.Controllers
         {
             var thisClient =
                 _db.Clients.FirstOrDefault(client => client.ClientId == id);
-            ViewBag.StylistId = new SelectList(_db.Stylist, "StylistId", "Name");
+            ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
             return View(thisClient);
         }
 

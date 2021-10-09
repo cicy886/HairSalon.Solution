@@ -1,7 +1,7 @@
 using HairSalon.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Stylists.Generic;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace HairSalon.Controllers
