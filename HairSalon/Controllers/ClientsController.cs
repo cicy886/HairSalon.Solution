@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using HairSalon.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace HairSalon.Controllers
@@ -24,6 +25,7 @@ namespace HairSalon.Controllers
 
         public ActionResult Create()
         {
+            ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
             return View();
         }
 
@@ -46,6 +48,7 @@ namespace HairSalon.Controllers
         {
             var thisClient =
                 _db.Clients.FirstOrDefault(client => client.ClientId == id);
+            ViewBag.StylistId = new SelectList(_db.Stylist, "StylistId", "Name");
             return View(thisClient);
         }
 
