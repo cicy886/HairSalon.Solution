@@ -1,8 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `hair_salon` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `hair_salon`;
+CREATE DATABASE  IF NOT EXISTS `sisi_vieira` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `sisi_vieira`;
 -- MySQL dump 10.13  Distrib 8.0.26, for Win64 (x86_64)
 --
--- Host: localhost    Database: hair_salon
+-- Host: localhost    Database: sisi_vieira
 -- ------------------------------------------------------
 -- Server version	8.0.26
 
